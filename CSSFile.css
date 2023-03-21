@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  
+    text-transform: capitalize;
+}
+
+    :root{
+        --purple:#9084C2;
+        --pink:#FBD8E6;
+        --orange: #909bec ;
+        --gradient:linear-gradient(90deg, var(--purple), var(--pink));
+        --surface-color: #fff;
+        --curve: 40;
+        --bg-color: #E6E5E1;
+    
+    }
+    
+    
+    
+    *::selection{
+         color: #B993D6;
+    }
+    
+    html{
+        font-size: 64.5%;
+        overflow-x: hidden;
+    }
+    
+    body{
+        background:#f9f9f9;
+    }
+    
+    section{
+        min-height: 9vh;
+        padding: 0 9%;
+        padding-top: 7.5rem;
+        padding-bottom: 2rem;
+    
+    
+    }
+
+/* media queries */
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+
+    }
+
+}
+@media (max-width: 991px){
+    section{
+        padding:0 3%;
+        padding-top: 7.5rem;
+        padding-bottom: 2rem;
+    
+    
+    }
+ 
+        
+}
+
+footer{
+position:absolute;
+bottom:0;
+left: 0;
+right: 0;
+ background:#DADCEC ;
+ height: auto;
+ width: 100vw;
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ padding-top: 50px;
+ color: aliceblue;
+ border-radius: 5px;
+
+}
+.footer-content{
+    display:contents;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    position: relative;
+    top: -20px;
+}
+.footer-content h4{
+    position: relative;
+    top: -10px;
+}
+.footer-content a{
+    text-decoration: none;
+}
+.footer-content a:hover{
+    color: blueviolet;
+}
+
+
+/*---------------HEADER------------*/
+header{
+    position: sticky;
+    top:0; left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+
+}
+header .logo{
+    font-size:  0rem;
+    color: var(--purple);
+
+
+}
+header .logo img{
+    height: 6rem;
+
+}
+header .logo span{
+ text-transform: lowercase;
+
+}
+header .navbar  a{
+    font-size: 35px;
+    margin-left: .5rem;
+    color:var(--orange) ; 
+    opacity: 0.5;
+}
+header a{
+    text-decoration: none;
+}
+
+header ul{
+    list-style: none;
+}
+.nav-list{
+    display: flex;
+    margin-right: 1rem;
+}
+.nav-list li{
+    line-height: 2rem;
+    position: relative;  
+
+}
+.buttonStyle {  
+    margin-bottom: 10px;      
+    border: none;  
+    cursor: pointer;  
+    font-size: 14px;  
+    border-radius: 5px;
+    width: 100px;  
+     
+}  
+
+.Form{
+
+        background-color: white;
+        box-shadow: 0 10px 20px 0 rgba(152, 131, 245, 0.2);
+        width: 550px;
+        height: 260px;
+        border: 1px ;
+       /* overflow: scroll;*/
+        position: absolute;
+        top: 120px;
+        left: 100px;
+        border-radius: 20px;
+        z-index: 2;
+        text-align: center;
+    
+}
+.Form .Titel {
+   font-weight: 250;
+   font-size: 25px;
+   color: #bac0ec ;
+}
+
+.Form form .user-dtails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:  20px 0 12px 0;
+   
+}
+form .user-dtails .input-box{
+  margin-bottom: 15px;
+    width: calc(100%/ 2 - 20px);
+    position:absolute;
+    left: 50px;
+   
+}
+
+form .user-dtails .category-box{
+    position:absolute;
+    top: 150px;
+    left: 345px;
+}
+
+
+form .user-dtails .date-box{
+    position:absolute;
+    top: 120px;
+    left: 50px;
+}
+form .user-dtails .button{
+    position:absolute;
+    top: 220px;
+    left: 300px;
+}
+
+form .user-dtails .button2{
+    position:absolute;
+    top: 220px;
+    left: 430px;
+   
+}
+
+
+form .user-dtails .priority-details{
+    position:absolute;
+    top: 60px;
+    left: 341px;
+}
+
+form  .priority-details .priority .dotone{
+    font-size: 16px;
+}
+
+.user-dtails .input-box input{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border:1px solid #ccc ;
+    padding-left: 15px;
+    font-size: 13px;
+    border-bottom-width: 2px;
+}
+.user-dtails .input-box input:focus,
+.user-dtails .input-box input:valid{
+border-color: #DADCEC;
+}
+
+.user-dtails .date-box input{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border:1px solid #ccc ;
+    padding-left: 15px;
+    font-size: 13px;
+    border-bottom-width: 2px;
+}
+.user-dtails .date-box input:focus,
+.user-dtails .date-box input:valid{
+border-color: #DADCEC;
+}
+
+.user-dtails .input-box .details{
+    
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #909bec ;
+}
+
+form .user-dtails .input-box .details{
+    font-size: 20px ;
+    font-weight: 35;  
+    color: #909bec ;
+}
+
+form .priority-details .priority-title{
+    font-size: 20px ;
+    font-weight: 35;
+    color: #909bec ;
+}
+
+form .category-box .Category{
+    font-size: 20px ;
+    font-weight: 35;
+    color: #909bec ;
+}
+
+form .date-box .date{
+    font-size: 20px ;
+    font-weight: 35;
+    color: #909bec ;
+}
+
+
+.img1{
+    position: absolute;
+    bottom: -300px;
+    left: -120px;
+}
+
+
+
+
+#NewTask .DoneTask{
+    margin: 5px 0;
+    padding: 20px;
+
+}
+.container{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 10px 20px 0 rgba(152, 131, 245, 0.2);
+    position: relative;
+    top: -57px;
+    right: -700px;
+    overflow: scroll;
+    width: 550px;
+    height: 260px;
+}
+
+.container2{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 10px 20px 0 rgba(152, 131, 245, 0.2);
+    position: relative;
+    bottom: 30px;
+    right: -366px;
+    overflow: scroll;
+    width: 550px;
+    height: 160px;
+
+}
+
+.task2{
+    background-color: #DADCEC;
+    height: 35px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #909bec;
+    cursor: pointer;
+   
+}
+
+.task2 span{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+ol{
+  list-style: none;  
+  counter-reset: my-counter;
+}
+ol li{
+    width: 100%;
+    padding: 18px;
+    margin: 5px 0;
+ 
+ 
+    text-align: left;
+counter-increment : my-counter;
+border-radius: 20px;
+font-size: 16px;
+
+
+}
+
+ol.DoneTask li{
+background-color: #80d3a0;
+}
+
+
+ol li::before{
+content: counter(my-counter);
+background:#DADCEC ;
+width: 2rem;
+height: 2rem;
+border-radius: 50%;
+display: inline-block;
+line-height: 2rem;
+text-align: center;
+margin-right: 0.5rem;
+}
+li button {
+    float: right;
+    padding: 5px;
+    text-align: center;
+    margin-right: 15px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+li .checkbox {
+    float: right;
+    padding: 5px;
+    text-align: center;
+    margin-right: 15px;
+    
+   
+    font-size: 28px;
+   
+    cursor: pointer;
+}
+
+li span i{
+    float: right;
+    width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
+   
+
+    font-size: 37px;
+    margin: -7px;
+    padding: 0px;
+    display: flex;
+}
+
+.warning{
+    color: rgb(243, 243, 3);
+
+}
+
+.Terminate{
+    color: red;
+   
+}
+
+.cheack{
+    color: green;
+}
+
+.Symbol22{
+    float: right;
+    width: 33.33%; 
+
+    font-size: 37px;
+    margin: -7px;
+    padding: 0px;
+    display: flex;
+}
+
+.fa-check:before {
+    content: "\f00c";
+    display: flex;
+    margin: -9px;
+    padding: 0px;
+}
+
+.fa-check:before {
+    content: "\f00c";
+    letter-spacing: 177px;
+}
+
+.fa-exclamation-triangle:before, .fa-triangle-exclamation:before, .fa-warning:before {
+    content: "\f071";
+    margin: 104px;
+    padding: 0px;
+}
+
+.fa-circle-xmark:before, .fa-times-circle:before, .fa-xmark-circle:before {
+    content: "\f057";
+    margin: 104px;
+    padding: 0px;
+}
+
+.DONE{
+    position: absolute;
+    top: 288px;
+    left: 1110px;
+
+    margin-bottom: 10px;      
+    border: none;  
+    cursor: pointer;  
+    font-size: 14px;  
+    border-radius: 5px;
+    width: 100px;  
+    
+}
+
+.datee.style {
+    position: absolute;
+    left: 41px;
+    bottom: 136px;
+    font-size: 15px;
+    font-style: italic;
+    color: #909bec;
+}
+.Titel{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
